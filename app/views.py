@@ -24,6 +24,6 @@ def loggedIn():
 def account():
     return render_template("about.html")
 
-@app.route('/aboutfooder')
-def about():
-    return render_template("aboutfooder.html")
+# @app.route('/aboutfooder')
+# def about():
+#     return render_template("aboutfooder.html")
