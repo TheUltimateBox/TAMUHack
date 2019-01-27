@@ -10,15 +10,226 @@
 </head>
 <body>
 
-<h1>Fooder (change to logo later) </h1>
-<div class="jumbotron">
-    <h2 id="placeTitle">HotDog Bell</h2>
-    <p id="placeDesc">good quesadillas hot dogs</p>
-    <img id="placeImg" src="https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-exlarge-tease.jpg" alt="hotdog" height="300" width="500"/>
-    <button id="btnGood">yummy</button>
-    <button id="btnBad">disgustang</button>
-    <button id="btnNeutral">meh</button>
-    <button id="btnGo" >tell me more</button>
+<h1>Fooder</h1>
+<center class="jumbotron">
+    <h2 id="placeTitle"><center>North Italia</center></h2>
+    <h3 id="placeDesc"><center>Classic Italian food</center></h3>
+    <center><img id="placeImg" src="https://bit.ly/2WiK9iB" alt="northItalia" height="300" width="500"/></center><br>
+    <style>
+        #btnGood {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color:#f9f9f9;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#12e03b;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        #btnGood:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+            background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+            background-color:#e9e9e9;
+        }
+        #btnGood:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+    <button id="btnGood">Yum!</button>
+    <style>
+        #btnBad {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color:#f9f9f9;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#e60000;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        #btnBad:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+            background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+            background-color:#e9e9e9;
+        }
+        #btnBad:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+    <button id="btnBad">Nah...</button>
+    <style>
+        #btnNeutral {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color:#f9f9f9;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#ebd000;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        #btnNeutral:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+            background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+            background-color:#e9e9e9;
+        }
+        #btnNeutral:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+    <button id="btnNeutral">¯\_(ツ)_/¯</button>
+    <style>
+        #btnSuper {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color:#f9f9f9;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#40aceb;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        #btnSuper:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+            background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+            background-color:#e9e9e9;
+        }
+        #btnSuper:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+    <button id="btnSuper">Fave</button>
+    <style>
+        #btnGo {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color:#f9f9f9;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#e800e8;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        #btnGo:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+            background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+            background-color:#e9e9e9;
+        }
+        #btnGo:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+    <button id="btnGo">Tell me more!</button>
 </div>
 
 <script>
@@ -34,21 +245,40 @@
     btnGood = document.getElementById('btnGood').addEventListener('click', clickButton);
     btnBad = document.getElementById('btnBad').addEventListener('click', clickButton);
     btnNeutral = document.getElementById('btnNeutral').addEventListener('click', clickButton);
+    btnSuper = document.getElementById('btnSuper').addEventListener('click', clickButton);
     btnGo = document.getElementById('btnGo').addEventListener('click', clickGo);
 
     // Data
     var placeData = [
         {
             title: 'North Italia',
-            desc: 'Classic Italian Food',
-            img: 'https://www.northitaliarestaurant.com/wp-content/themes/frc/static/images/socialshare.jpg',
+            desc: 'Classic Italian food',
+            img: 'https://bit.ly/2WiK9iB',
             link: 'https://www.northitaliarestaurant.com/'
+        },
+        {
+            title: 'Del Frisco\'s',
+            desc: 'Flawless cuisine and genuine Southern hospitality',
+            img: 'https://bit.ly/2G4rWzE',
+            link: 'https://bit.ly/2S7HVDq'
         },
         {
             title: 'Taco Bell',
             desc: 'Mexican Fast Food',
             img: 'https://www.tacobell.com/medias/International-Hero.jpg?context=bWFzdGVyfHJvb3R8MjkyNDczfGltYWdlL2pwZWd8aDU5L2hiOC84ODA2NzYwMTIwMzUwLmpwZ3w1NGFkOWMxOTMwZjVkNWRiMmI5Nzk3Mzk1Y2I2NTA1YTA5N2EwNjUyYTlmYjFhNTJlMTJlNDk0YWI5N2Y1NDdm',
             link: 'https://www.tacobell.com/'
+        },
+        {
+            title: 'Whataburger',
+            desc: 'Southern Fast Food',
+            img: 'https://bit.ly/2Tc81m0',
+            link: 'http://whataburger.com/'
+        },
+        {
+            title: 'Densetsu',
+            desc: 'Fine Japanese cuisine',
+            img: 'https://bit.ly/2FPRgdb',
+            link: 'https://www.densetsujapanese.com/'
         }
     ];
 
@@ -56,6 +286,7 @@
         var placeLen = placeData.length;
         placeNum++;
         if(placeNum > placeLen-1) placeNum = 0;
+
 
         placeTitle.innerText = placeData[placeNum].title;
         placeDesc.innerText = placeData[placeNum].desc;
