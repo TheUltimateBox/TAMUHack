@@ -14,24 +14,150 @@
   </div>
 
  <div>
+     <style>
+      #btnName {
+          -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+          background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+          background-color:#f9f9f9;
+          -moz-border-radius:6px;
+          -webkit-border-radius:6px;
+          border-radius:6px;
+          border:1px solid #dcdcdc;
+          display:inline-block;
+          cursor:pointer;
+          color:#6babd1;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffffff;
+      }
+      #btnName:hover {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+          background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+          background-color:#e9e9e9;
+      }
+      #btnName:active {
+          position:relative;
+          top:1px;
+      }
+    </style>
      <p> </p>
     <p style="font-family: Raleway;">Enter the name of your restaurant here:</p>
     <form action="/action_page.php" method="get">
       <input type="text" name="restaurant_name" style="font-family: Raleway;" placeholder="Restaurant name" required>
-        <input type="submit" onclick="clickGo()" value="Enter" style="font-family: Raleway;">
+        <input id="btnName" type="submit" onclick="clickGo()" value="Enter" style="font-family: Raleway;">
     </form>
   </div>
 
 <div>
+    <style>
+      #btnLoc {
+          -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+          background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+          background-color:#f9f9f9;
+          -moz-border-radius:6px;
+          -webkit-border-radius:6px;
+          border-radius:6px;
+          border:1px solid #dcdcdc;
+          display:inline-block;
+          cursor:pointer;
+          color:#6babd1;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffffff;
+      }
+      #btnLoc:hover {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+          background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+          background-color:#e9e9e9;
+      }
+      #btnLoc:active {
+          position:relative;
+          top:1px;
+      }
+    </style>
     <p> </p>
     <p style="font-family: Raleway;">Enter the location of your restaurant here:</p>
     <form action="/action_page.php" method="get">
       <input type="text" name="location_rest" style="font-family: Raleway;" placeholder="Location" required>
-        <input type="submit" onclick="clickGo()" value="Enter" style="font-family: Raleway;">
+        <input id="btnLoc" type="submit" onclick="clickGo()" value="Enter" style="font-family: Raleway;">
     </form>
   </div>
 
  <div>
+     <style>
+      #btnFood {
+          -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+          background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+          background-color:#f9f9f9;
+          -moz-border-radius:6px;
+          -webkit-border-radius:6px;
+          border-radius:6px;
+          border:1px solid #dcdcdc;
+          display:inline-block;
+          cursor:pointer;
+          color:#6babd1;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffffff;
+      }
+      #btnFood:hover {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+          background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+          background-color:#e9e9e9;
+      }
+      #btnFood:active {
+          position:relative;
+          top:1px;
+      }
+    </style>
     <p style="font-family: Raleway;">What type of food does your restaurant serve?:</p>
     <form action="/action_page.php" method="get">
       <input type="checkbox" name="foodstyle" value="italian"> Italian<br>
@@ -41,11 +167,53 @@
       <input type="checkbox" name="foodstyle" value="american"> American<br>
       <input type="checkbox" name="foodstyle" value="mexican"> Mexican<br>
       <input type="checkbox" name="foodstyle" value="japanese"> Japanese<br>
-      <input type="submit" value="Submit" style="font-family: Raleway;">
+      <input id="btnFood" type="submit" value="Submit" style="font-family: Raleway;">
     </form>
   </div>
 
 <div>
+    <style>
+      #btnPrice {
+          -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+          background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+          background-color:#f9f9f9;
+          -moz-border-radius:6px;
+          -webkit-border-radius:6px;
+          border-radius:6px;
+          border:1px solid #dcdcdc;
+          display:inline-block;
+          cursor:pointer;
+          color:#6babd1;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffffff;
+      }
+      #btnPrice:hover {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+          background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+          background-color:#e9e9e9;
+      }
+      #btnPrice:active {
+          position:relative;
+          top:1px;
+      }
+    </style>
     <p> </p>
     <p style="font-family: Raleway;">Enter the average price of your restaurant here:</p>
    <form action="/action_page.php" method="get">
@@ -55,7 +223,7 @@
       <input type="checkbox" name="price" value="30to40"> $30 - $40<br>
       <input type="checkbox" name="price" value="40to50"> $40 - $50<br>
       <input type="checkbox" name="price" value="more50"> > $50<br>
-      <input type="submit" value="Submit" style="font-family: Raleway;">
+      <input id="btnPrice" type="submit" value="Submit" style="font-family: Raleway;">
     </form>
   </div>
 
@@ -87,11 +255,53 @@
 </div>
 
   <div>
+      <style>
+      #btnSub {
+          -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+          box-shadow:inset 0px 1px 0px 0px #ffffff;
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+          background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+          background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+          background-color:#f9f9f9;
+          -moz-border-radius:6px;
+          -webkit-border-radius:6px;
+          border-radius:6px;
+          border:1px solid #dcdcdc;
+          display:inline-block;
+          cursor:pointer;
+          color:#6babd1;
+          font-family:Arial;
+          font-size:15px;
+          font-weight:bold;
+          padding:6px 24px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #ffffff;
+      }
+      #btnSub:hover {
+          background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+          background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+          background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+          background-color:#e9e9e9;
+      }
+      #btnSub:active {
+          position:relative;
+          top:1px;
+      }
+    </style>
       <p> </p>
       <p style="font-family: Raleway;">Add any photos here</p>
 <form action="/action_page.php">
   <input type="file" name="pic" accept="image/*">
-  <input type="submit" style="font-family: Raleway;">
+  <input id="btnSub" type="submit" style="font-family: Raleway;">
 </form>
 </div>
 
