@@ -17,6 +17,11 @@ def about():
     return render_template("about.html")
 
 
+@app.route('/homeAbout')
+def homeAbout():
+    return render_template("homeAbout.html")
+
+
 @app.route('/afterLogin')
 def loggedIn():
     return render_template("loggedIn.html")
