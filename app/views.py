@@ -24,8 +24,11 @@ def homeAbout():
 
 @app.route('/afterLogin')
 def loggedIn():
-    return render_template("loggedIn.html")
+    return render_template("preferences.html")
 
+@app.route('/restaurant')
+def restaurant():
+    return render_template('restaurant.html')
 
 @app.route('/preferences')
 def preferences():
@@ -41,6 +44,3 @@ def swipe():
 def signIn():
     return render_template("index.html")
 
-# @app.route('/aboutfooder')
-# def about():
-#     return render_template("aboutfooder.html")

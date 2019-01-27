@@ -10,15 +10,15 @@
 </head>
 <body>
 
-<h1>Fooder (change to logo later) </h1>
-<div class="jumbotron">
-    <h2 id="placeTitle">HotDog Bell</h2>
-    <p id="placeDesc">good quesadillas hot dogs</p>
-    <img id="placeImg" src="https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-exlarge-tease.jpg" alt="hotdog" height="300" width="500"/>
-    <button id="btnGood">yummy</button>
-    <button id="btnBad">disgustang</button>
-    <button id="btnNeutral">meh</button>
-    <button id="btnGo" >tell me more</button>
+<h1>Fooder</h1>
+<center class="jumbotron">
+    <h2 id="placeTitle"><center>North Italia</center></h2>
+    <p id="placeDesc"><center>Classic Italian food</center></p>
+    <center><img id="placeImg" src="https://bit.ly/2WiK9iB" alt="northItalia" height="300" width="500"/></center><br>
+    <button id="btnGood">Yum!</button>
+    <button id="btnBad">Nah...</button>
+    <button id="btnNeutral">¯\_(ツ)_/¯</button>
+    <button id="btnGo">Tell me more!</button>
 </div>
 
 <script>
@@ -40,15 +40,33 @@
     var placeData = [
         {
             title: 'North Italia',
-            desc: 'Classic Italian Food',
-            img: 'https://www.northitaliarestaurant.com/wp-content/themes/frc/static/images/socialshare.jpg',
+            desc: 'Classic Italian food',
+            img: 'https://bit.ly/2WiK9iB',
             link: 'https://www.northitaliarestaurant.com/'
+        },
+        {
+            title: 'Del Frisco\'s',
+            desc: 'Flawless cuisine and genuine Southern hospitality',
+            img: 'https://bit.ly/2G4rWzE',
+            link: 'https://bit.ly/2S7HVDq'
         },
         {
             title: 'Taco Bell',
             desc: 'Mexican Fast Food',
             img: 'https://www.tacobell.com/medias/International-Hero.jpg?context=bWFzdGVyfHJvb3R8MjkyNDczfGltYWdlL2pwZWd8aDU5L2hiOC84ODA2NzYwMTIwMzUwLmpwZ3w1NGFkOWMxOTMwZjVkNWRiMmI5Nzk3Mzk1Y2I2NTA1YTA5N2EwNjUyYTlmYjFhNTJlMTJlNDk0YWI5N2Y1NDdm',
             link: 'https://www.tacobell.com/'
+        },
+        {
+            title: 'Wataburger',
+            desc: 'Southern Fast Food',
+            img: 'https://bit.ly/2Tc81m0',
+            link: 'http://whataburger.com/'
+        },
+        {
+            title: 'Densetsu',
+            desc: 'Fine Japanese cuisine',
+            img: 'https://bit.ly/2FPRgdb',
+            link: 'https://www.densetsujapanese.com/'
         }
     ];
 
@@ -56,6 +74,7 @@
         var placeLen = placeData.length;
         placeNum++;
         if(placeNum > placeLen-1) placeNum = 0;
+
 
         placeTitle.innerText = placeData[placeNum].title;
         placeDesc.innerText = placeData[placeNum].desc;

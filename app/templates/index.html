@@ -166,18 +166,16 @@
             <div class="hide-md-lg">
               <p>Or sign in manually:</p>
             </div>
-
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" onclick="clickGo()" value="Login">
-          </div>
             <script>
                 function clickGo(){
-                    window.location.href = "/afterLogin" ;
+                    window.location.href = '/afterLogin' ;
                 }
             </script>
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" onclick="clickGo()" value="Login">
 
-
+          </div>
         </div>
       </form>
     </div>
@@ -192,7 +190,7 @@
         </div>
       </div>
     </div>
-
+    <body/>
   </p>
 </div>
 {% endblock %}
