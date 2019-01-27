@@ -1,70 +1,35 @@
 <!-- about.html-->
+
 <!DOCTYPE html>
-
-{% extends "base.html" %}
-{% block title %}About{% endblock %}
-{% block body %}
-<html>
-<head>
-  <title>Fooder</title>
-</head>
-
-<body>
-  <div class="jumbotron">
-    <h1>My Preferences</h1>
-  </div>
-
-  <div>
-    <p>Enter your food preferences here:</p>
-    <form action="/action_page.php" method="get">
-      <input type="checkbox" name="foodstyle" value="italian"> Italian<br>
-      <input type="checkbox" name="foodstyle" value="chinese"> Chinese<br>
-      <input type="checkbox" name="foodstyle" value="thai"> Thai<br>
-      <input type="checkbox" name="foodstyle" value="indian"> Indian<br>
-      <input type="checkbox" name="foodstyle" value="american"> American<br>
-      <input type="checkbox" name="foodstyle" value="mexican"> Mexican<br>
-      <input type="checkbox" name="foodstyle" value="japanese"> Japanese<br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
- <div>
-   <p> </p>
-    <p>Enter your price range here:</p>
-    <form action="/action_page.php" method="get">
-      <input type="checkbox" name="price" value="less10"> < $10<br>
-      <input type="checkbox" name="price" value="10to20"> $10 - %20<br>
-      <input type="checkbox" name="price" value="20to30"> $20 - $30<br>
-      <input type="checkbox" name="price" value="30to40"> $30 - $40<br>
-      <input type="checkbox" name="price" value="40to50"> $40 - $50<br>
-      <input type="checkbox" name="price" value="more50"> > $50<br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-<div>
-  <p> </p>
-    <p>Breakfast Lunch or Dinner?</p>
-    <form action="/action_page.php" method="get">
-      <input type="checkbox" name="bld" value="breakfast"> Breakfast<br>
-      <input type="checkbox" name="bld" value="lunch"> Lunch<br>
-      <input type="checkbox" name="bld" value="dinner"> Dinner<br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-<div>
-    <p>Enter your distance here:</p>
-    <form action="/action_page.php" method="get">
-      <input type="checkbox" name="distance" value="less5mi"> < 5 miles<br>
-      <input type="checkbox" name="distance" value="5to10mi"> 5 - 10 miles<br>
-      <input type="checkbox" name="distance" value="10to15mi"> 10 - 15 miles<br>
-      <input type="checkbox" name="distance" value="15to20mi"> 15 - 20 miles<br>
-      <input type="checkbox" name="distance" value="more20mi"> > 20 miles<br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-</body>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/swipe">Swipe</a></li>
+            <li role="presentation"><a href="/about">About</a></li>
+            <li role="presentation"><a href="/afterLogin" target="_blank">My Profile</a></li>
+            <li role="presentation"><a href="/afterLogin">Log out</a></li>
+          </ul>
+        </nav>
+      </div>
+      {% block body %}
+      <div class="jumbotron">
+        <h1>The About Page</h1>
+        <p class="lead">You can learn more about my Fooder here.</p>
+      </div>
+      {% endblock %}
+      <footer class="footer">
+        <p>© 2019 Aggies</p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
 </html>
-{% endblock %}
