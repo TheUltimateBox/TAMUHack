@@ -295,7 +295,9 @@
     }
 
     function clickGo(){
-        window.location.href = placeData[placeNum].link;
+        var link = placeData[placeNum].link;
+        var win = window.open(link, '_blank');
+        win.focus();
     }
 </script>
 
